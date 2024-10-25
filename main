@@ -1,1 +1,13 @@
+def create_file():
+    try:
+        #Відкриваємо файл для запису питання
+        with open("questions_answers.txt", "w", encoding="utf-8") as file:
+            #Записуємо прізвище та питання
+            file.write("Прізвище: Марюха\n")
+            file.write("Питання: Що таке функція, і як її оголосити в Python?\n")
+        print("Файл 'questions_answers.txt' успішно створено, і питання записано.")
+    except IOError as e:
+        print(f"Помилка під час створення файлу: {e}")
 
+#Викликаємо функцію для створення файлу
+create_file()
