@@ -1,3 +1,4 @@
+#Марюха Дар'я
 def create_file():
     try:
         #Відкриваємо файл для запису питання
@@ -8,6 +9,7 @@ def create_file():
         print("Файл 'questions_answers.txt' успішно створено, і питання записано.")
     except IOError as e:
         print(f"Помилка під час створення файлу: {e}")
+#Кислий Олександр
 def add_answer():
     try:
         with open("questions_answers.txt", "a", encoding="utf-8") as file:
